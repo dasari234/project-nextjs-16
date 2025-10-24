@@ -1,15 +1,22 @@
+"use client";
+
+import { Button, Card } from "react-shared-components";
+// import 'react-shared-components/index.css';
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-        </div>
-      </main>
+    <div className="min-h-screen p-8">
+      <div className="max-w-4xl mx-auto">
+        <Card title="My Components Library">
+          <div className="space-y-4">
+            <p>Testing my shared components:</p>
+            <div className="flex gap-3">
+              <Button variant="primary">Primary Button</Button>
+              <Button variant="secondary">Secondary Button</Button>
+            </div>
+          </div>
+        </Card>
+      </div>
     </div>
   );
 }
